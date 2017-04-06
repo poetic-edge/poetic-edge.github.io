@@ -93,8 +93,8 @@ header{
     animation-direction: alternate;
 }
 @keyframes arrow {
-    from{top: 60%}
-    to{top: 65%}
+    from{top: 55%}
+    to{top: 60%}
 }
 article .posts{
     width: 80%;
@@ -141,7 +141,7 @@ div.ajax{
 }
 .ajax .ajax_date{
     text-align: right;
-    margin: 20px 50px 0 0;
+    margin: 20px 50px 20px 0;
 }
 .ajax .back{
     padding: 10px 10px;
