@@ -1,0 +1,158 @@
+/*重置*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    display: inline-block;
+}
+body,ul{
+    margin: 0;
+}
+
+/*通用*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+/*index.html*/
+.top{
+    height:45px;
+    background: rgba(141,98,252,0.3);
+    color: #fff;
+    width: 100%;
+    position: fixed;
+}
+.top li a{
+    color: #fff;
+    display: inline-block;
+    padding: 0 20px;
+    -webkit-transition: backgroud 2s,color 2s;
+    -moz-transition: backgroud 2s,color 2s;
+    -ms-transition: backgroud 2s,color 2s;
+    -o-transition: backgroud 2s,color 2s;
+    transition: backgroud 2s,color 2s;
+}
+.top a:hover{
+    background: rgba(255,255,255,0.35);
+    color: rgba(141,98,255,1);
+}
+.top h1{
+    line-height: 45px;
+    margin: 0;
+    margin-left: 40px;
+    -webkit-transition: color 2s;
+    -moz-transition: color 2s;
+    -ms-transition: color 2s;
+    -o-transition: color 2s;
+    transition: color 2s;
+}
+.top h1:hover{
+    color: rgba(141,98,255,1);
+}
+.top ul li{
+    line-height: 45px;
+}
+header{
+    min-height: 100px;
+    overflow: hidden;
+    background: url("image/bg.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.slogan{
+    position: relative;
+    top: 30%;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 45px;
+    padding: 3%;
+    border-radius: 20%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+.arrow{
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    border-left: solid 4px rgba(0,0,0,0.3);
+    border-bottom: solid 4px rgba(0,0,0,0.3);
+    transform: rotate(-45deg);
+    -webkit-animation:arrow 2s;
+    -o-animation:arrow 2s;
+    animation:arrow 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes arrow {
+    from{bottom: 8%}
+    to{bottom: 2%}
+}
+article .posts{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.post{
+    margin-bottom: 50px;
+    color: #4a4a4a;
+}
+.date{
+    margin-bottom: 20px;
+}
+.author{
+    margin-bottom: 20px;
+}
+
+footer{
+    width: 100%;
+    min-height: 100px;
+    background: rgba(141,98,252,0.4);
+    color: grey;
+    text-align: center;
+    line-height: 150%;
+}
+footer h2{
+    text-align: center;
+    padding-top: 20px;
+}
+footer .intro{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/*ajax部分*/
+div.ajax{
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+}
+.ajax .ajax_author{
+    margin:0 0 20px 50px;
+}
+.ajax .ajax_date{
+    text-align: right;
+    margin: 20px 50px 0 0;
+}
+.ajax .back{
+    padding: 10px 10px;
+    background: rgba(141,98,252,0.4);
+    border-radius: 5px;
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+.back:hover{
+    color: #fff;
+    background: rgba(141,98,255,1.0);
+}

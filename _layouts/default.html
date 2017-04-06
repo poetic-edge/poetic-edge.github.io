@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/normalize.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/jquery-3.2.0.min.js"></script>
+    <script src="/assets/js.js"></script>
+    <title>POETIC EDGE</title>
+</head>
+<body>
+    <header id="header">
+        <div class="top" id="top">
+            <h1 class="fl">POETIC EDGE</h1>
+            <ul class="fr">
+                <li><a href="#header">首页</a></li>
+                <li><a href="#art">杂记</a></li>
+                <li><a href="#footer">关于</a></li>
+            </ul>
+        </div>
+        <div class="slogan">
+            A lifetime is not enough to have the poetic world. 
+        </div>
+        <a href="#art" class="arrow">
+        </a>
+    </header>
+
+<article id="art">
+    <div class="posts">
+        {% for post in site.posts %}
+        <div class="post">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <div class="author">{{ post.author }}</div>
+
+            <div class="content">
+                {{ post.excerpt }}
+            </div>
+            <hr>
+            <div class="date">{{post.date | date_to_string }}</div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="ajax">
+        <h1 class="ajax_title"></h1>
+        <div class="ajax_author"></div>
+        <div class="ajax_post">
+            
+        </div>
+        <div class="ajax_date">
+           
+        </div>
+        <a href="#" class="back">返回首页</a>
+    </div>
+</article>
+
+<footer id="footer">
+    <h2>POETIC EDGE</h2>
+    <div class="intro">
+        A lifetime is not enough to have the poetic world. <br/>
+        © 一然 2017 初夏 <br>Design by yiran. Power by Jekyll. 
+    </div>
+</footer>
+</body>
+</html>
