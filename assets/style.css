@@ -80,9 +80,9 @@ header{
     display: block;
     height: 50px;
     width: 50px;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
+    position: relative;
+    top:70%;
+    margin: 0 auto;
     border-left: solid 4px rgba(0,0,0,0.3);
     border-bottom: solid 4px rgba(0,0,0,0.3);
     transform: rotate(-45deg);
@@ -93,8 +93,8 @@ header{
     animation-direction: alternate;
 }
 @keyframes arrow {
-    from{bottom: 8%}
-    to{bottom: 2%}
+    from{top: 60%}
+    to{top: 65%}
 }
 article .posts{
     width: 80%;
@@ -155,4 +155,21 @@ div.ajax{
 .back:hover{
     color: #fff;
     background: rgba(141,98,255,1.0);
+}
+
+/*兼容手机 媒体查询*/
+@media screen and (max-width:600px){
+    .slogan{
+        font-size: 30px;
+        top: 40%;
+    }
+    header ul{
+        display: none;
+    }
+    header .top h1{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto; 
+    }
+
 }

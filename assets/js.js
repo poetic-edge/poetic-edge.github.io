@@ -28,7 +28,7 @@ function ajaxPost() {
     var post = $(".post");
     post.each(function (event) {
         var $this = $(this);
-        $this.find("h2").on("click",function (event) {
+        $this.on("click",function (event) {
             event.preventDefault();
             var url = $this.find("a").attr("href");
             $(".posts").fadeOut("slow",function () {
